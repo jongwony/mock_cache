@@ -11,10 +11,6 @@ import pandas as pd
 def sql_cache(force_update: bool = False):
     """
     monkeypatch and save or mock load
-
-    Note
-    ----
-    Only one `read_sql` should be written in one with statement.
     """
 
     def save(target, df):
